@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import LineBreak from '../lib/LineBreak.vue'
+import LineBreak from '../lib/components/LineBreak.vue'
 
 const text = `
 どうも、初めまして。本日は簡単に適切な位置で改行を入れる方法を説明したいと思います。

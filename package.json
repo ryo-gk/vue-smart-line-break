@@ -1,10 +1,33 @@
 {
   "name": "vue-smart-line-break",
   "version": "0.0.1",
+  "description": "Provide ways to line break smartly",
   "type": "module",
+  "author": "Ryosuke Kogure <ryo.gk55@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryo-gk/vue-smart-line-break.git"
+  },
+  "keywords": [
+    "vue",
+    "line-break"
+  ],
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.js"
+    },
+    "./LineBreak.vue": "./lib/components/LineBreak.vue"
+  },
+
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc && vite build",
+    "build": "tsup lib/index.ts --dts --format cjs,esm",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -13,6 +36,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.0.0",
+    "tsup": "^6.5.0",
     "typescript": "^4.9.3",
     "vite": "^4.0.0",
     "vue-tsc": "^1.0.11"
