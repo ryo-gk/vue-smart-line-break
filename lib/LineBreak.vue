@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { loadDefaultJapaneseParser } from 'budoux';
+import { loadDefaultJapaneseParser } from 'budoux'
 
 const props = defineProps<{
   text: string
@@ -7,8 +7,6 @@ const props = defineProps<{
 
 const parser = loadDefaultJapaneseParser();
 const contents = parser.parse(props.text).join('<wbr>')
-
-console.log(contents)
 </script>
 
 <template>
@@ -21,5 +19,4 @@ console.log(contents)
   word-break: keep-all;
   overflow-wrap: break-word;
 }
-
 </style>
