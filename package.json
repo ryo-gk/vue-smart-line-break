@@ -24,14 +24,15 @@
     },
     "./LineBreak.vue": "./lib/components/LineBreak.vue"
   },
-
   "scripts": {
     "dev": "vite",
     "build": "tsup lib/index.ts --dts --format cjs,esm",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "release": "node scripts/release.js"
   },
   "dependencies": {
     "budoux": "^0.4.0",
+    "execa": "^6.1.0",
     "vue": "^3.2.45"
   },
   "devDependencies": {
