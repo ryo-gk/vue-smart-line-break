@@ -1,6 +1,6 @@
 {
   "name": "vue-smart-line-break",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Provide ways to line break smartly",
   "type": "module",
   "author": "Ryosuke Kogure <ryo.gk55@gmail.com>",
